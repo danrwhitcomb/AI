@@ -84,6 +84,10 @@ public class BadSensorProblem {
 			if(isHighest(robot.x, robot.y)){
 				countHighest++;
 			}
+			
+			count++;
+			int i = 1;
+			robot.makeMove(move);
 		}
 		
 		System.out.println("Prediction Accuracy: " + ((countHighest * 1.0 / iterations) * 100) + "%");
